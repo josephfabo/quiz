@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="app">
+            <h1>Quiz</h1>
+            <div class="quiz-selection" id="quiz-selection">
+                <h2>Select a Quiz</h2>
+                <div>
+                    <button class="btn" onclick="startQuiz(0)">Mathematics</button>
+                    <button class="btn" onclick="startQuiz(1)">Science</button>
+                    <button class="btn" onclick="startQuiz(2)">History</button>
+                </div>
+            </div>
+            <div class="quiz" id="quiz_container" style="display: none;">
+                <h2 id="question">Question goess here</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
